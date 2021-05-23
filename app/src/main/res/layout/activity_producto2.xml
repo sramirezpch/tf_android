@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beats1"
+    tools:context=".Producto2Activity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/beatsdhead"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scrollView2"
+                android:layout_width="414dp"
+                android:layout_height="655dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="107dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="15 Resultados"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.053"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="379dp"
+                    android:layout_height="315dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.407"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.189">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_light_background"
+                            android:orientation="vertical"
+                            android:paddingRight="0dp">
+
+                            <ImageView
+                                android:id="@+id/imageView101"
+                                android:layout_width="180dp"
+                                android:layout_height="230dp"
+                                app:srcCompat="@drawable/beatssolo3" />
+
+                            <TextView
+                                android:id="@+id/textView33"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beats by Dr. Dre"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView34"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Plug And Play"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:autoText="true"
+                                android:text="$155"
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="197dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_light_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="180dp"
+                                android:layout_height="230dp"
+                                app:srcCompat="@drawable/beatssolo3" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beats Solo 3 "
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Wireless"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView28"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:autoText="true"
+                                android:text="$99"
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="53dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/horizontalScrollView"
+                    app:srcCompat="@drawable/newnew" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
+                    android:layout_width="388dp"
+                    android:layout_height="272dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.592"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_light_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView1011"
+                                android:layout_width="180dp"
+                                android:layout_height="230dp"
+                                app:srcCompat="@drawable/beatssolo3" />
+
+                            <TextView
+                                android:id="@+id/textView333"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beats By Dr. Dre 2"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView343"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bang and Olufsen"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView253"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:autoText="true"
+                                android:text="$755"
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="197dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardview_light_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView200"
+                                android:layout_width="180dp"
+                                android:layout_height="230dp"
+                                app:srcCompat="@drawable/beatssolo3" />
+
+                            <TextView
+                                android:id="@+id/textView260"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beats 2 True Wireless"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/textView270"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tag Heuer"
+                                android:textAlignment="center"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/textView280"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:autoText="true"
+                                android:text="$450"
+                                android:textAlignment="center"
+                                android:textColor="@color/rosa" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

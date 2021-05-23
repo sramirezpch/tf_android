@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_mas_informacion"
+        android:title="Más Información" />
+    <item
+        android:id="@+id/nav_ayuda"
+        android:title="Ayuda" />
+    <item
+        android:id="@+id/nav_contacto"
+        android:title="Contacto" />
+</menu>

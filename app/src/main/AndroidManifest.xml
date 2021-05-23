@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ep1">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/isil_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EP1">
+        <activity
+            android:name=".mas_informacion"
+            android:label="Contacto"></activity>
+        <activity
+            android:name=".Producto2Activity"
+            android:label="Resultados encontrados" />
+        <activity
+            android:name=".ProductoActivity"
+            android:label="Productos de Beats" />
+        <activity
+            android:name=".TarjetaActivity2"
+            android:label="Editar tarjeta" />
+        <activity
+            android:name=".ayuda"
+            android:label="Ayuda" />
+        <activity
+            android:name=".contacto"
+            android:label="Contacto" />
+        <activity android:name=".Estado_rl" />
+        <activity
+            android:name=".Tracking_rl"
+            android:label="Estado de mi pedido" />
+        <activity
+            android:name=".cuenta_rl"
+            android:label="Mi cuenta" />
+        <activity android:name=".Splash"
+            android:theme="@style/Theme.EP1.NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".forgotPassword"
+            android:label="Recuperar contraseña" />
+        <activity
+            android:name=".signup"
+            android:label="Registrate" />
+        <activity
+            android:name=".login"
+            android:label="Iniciar Sesion" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Inicio de la tienda" />
+    </application>
+
+</manifest>

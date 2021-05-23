@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EP1</string>
+    <string name="filter">filter</string>
+    <string name="camera">camera</string>
+    <string name="javier_ravines">Javier Ravines</string>
+    <string name="jravines_yahoo_com_es">jaravines@yahoo.com.es</string>
+    <string name="usuario">Usuario</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="wish_list">Wish List</string>
+    <string name="direccion_de_entrega">Dirección de entrega</string>
+    <string name="ir_direccion">irDireccion</string>
+    <string name="irdireccion">irDireccioon</string>
+    <string name="wishlist">WishList</string>
+    <string name="historia_de_ordenes">Historia de Órdenes</string>
+    <string name="seguimiento">Seguimiento</string>
+    <string name="historiaordenes">historiaOrdenes</string>
+    <string name="seguirordenes">seguirOrdenes</string>
+    <string name="ir_a_seguimiento">ir_a_seguimiento</string>
+    <string name="ir_a_tarjetas">ir_a_Tarjetas</string>
+    <string name="followup">FollowUp</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="volver">Volver</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="datos_personales">Datos Personales</string>
+</resources>
