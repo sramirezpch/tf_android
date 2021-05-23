@@ -11,7 +11,7 @@
         android:theme="@style/Theme.EP1">
         <activity android:name=".ver_todo"
             android:label="Productos">
-            
+
         </activity>
         <activity
             android:name=".mas_informacion"
