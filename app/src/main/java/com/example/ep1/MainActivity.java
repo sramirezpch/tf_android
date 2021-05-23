@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private View decorView;// 1) Ocultar las barras de estado y de navegación
@@ -31,10 +32,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView imagenUsuario = findViewById(R.id.imgUsuario);
         SearchView buscarProductos = findViewById(R.id.searchProductos);
         LinearLayout beatsLayout = findViewById(R.id.layoutBeats);
+        TextView verTodo = findViewById(R.id.txtSeeAll);
 
         imagenUsuario.setOnClickListener(this);
         buscarProductos.setOnClickListener(this);
         beatsLayout.setOnClickListener(this);
+        verTodo.setOnClickListener(this);
     }
 
     @Override//3) Ocultar las barras de estado y de navegación
@@ -57,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch(v.getId()){
+            case R.id.txtSeeAll:
+                startActivity(new Intent(this, ver_todo.class));
+                break;
             case R.id.imgUsuario:
                 startActivity(new Intent(this, cuenta_rl.class));
                 break;

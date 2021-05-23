@@ -26,12 +26,13 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class ayuda extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class ver_todo extends AppCompatActivity implements AdapterView.OnItemClickListener {
+
     ArrayList arrayList = new ArrayList<HashMap<String,String>>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ayuda);
+        setContentView(R.layout.activity_ver_todo);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         leerDatos();
@@ -39,14 +40,13 @@ public class ayuda extends AppCompatActivity implements AdapterView.OnItemClickL
 
     private void leerDatos() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="https://servicios.campus.pe/servicioempleados.php";
+        String url ="https://jsonplaceholder.typicode.com/users/";
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         Log.d("DATOS:", response);
-                        Log.i("ONRESPONSE: ", "Entrando al response");
                         llenarLista(response);
                     }
                 }, new Response.ErrorListener() {
@@ -56,56 +56,50 @@ public class ayuda extends AppCompatActivity implements AdapterView.OnItemClickL
             }
         });
 
-        // Add the request to the RequestQueue.
+// Add the request to the RequestQueue.
         queue.add(stringRequest);
     }
 
     private void llenarLista(String response) {
         try {
-            Log.i("ONLIST: ", "Entrando a la función llenarLista()");
-            Log.i("", "llenarLista()");
             JSONArray jsonArray = new JSONArray(response);
             for(int i= 0; i<jsonArray.length();i++){
-                String idEmpleado = jsonArray.getJSONObject(i).getString("idempleado");
-                String apellidos = jsonArray.getJSONObject(i).getString("apellidos");
-                String nombre = jsonArray.getJSONObject(i).getString("nombres");
-                String telefono = jsonArray.getJSONObject(i).getString("telefono");
+                String name = jsonArray.getJSONObject(i).getString("name");
+                String username = jsonArray.getJSONObject(i).getString("username");
+                String email = jsonArray.getJSONObject(i).getString("email");
                 HashMap<String,String> map = new HashMap<>();
-                map.put("idEmpleado", idEmpleado);
-                map.put("apellidos", apellidos);
-                map.put("nombres", nombre);
-                map.put("telefono", telefono);
+                map.put("name", name);
+                map.put("username", username);
+                map.put("email", email);
                 arrayList.add(map);
             }
 
-            ListView lvEmpleados = findViewById(R.id.lvEmpleados);
-            String[] datos = {"idEmpleado","apellidos","nombres", "telefono"};
-            int[] ids = {R.id.txvIdEmpleado,  R.id.txvApellido, R.id.txvNombreEmpleado, R.id.txvTelefono};
+            ListView lvUsuarios = findViewById(R.id.lvUsuarios);
+            String[] datos = {"name","username","email"};
+            int[] ids = {R.id.txvNombre, R.id.txvUsername, R.id.txvMail};
 
             ListAdapter listAdapter = new SimpleAdapter(
                     this,
                     arrayList,
-                    R.layout.item_empleados,
+                    R.layout.item_ver_todo,
                     datos,
                     ids
             );
 
-            lvEmpleados.setAdapter(listAdapter);
-            lvEmpleados.setOnItemClickListener(this);
+            lvUsuarios.setAdapter(listAdapter);
+            lvUsuarios.setOnItemClickListener(this);
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Log.d("POSICION", String.valueOf(position));
         HashMap<String,String> map = (HashMap<String, String>) arrayList.get(position);
-        String nombres = map.get("nombres");
-        String apellidos = map.get("apellidos");
-
-        Toast.makeText(this,"Enviar un email a " + nombres + " " + apellidos,Toast.LENGTH_SHORT).show();
+        String name = map.get("name");
+        Toast.makeText(this,name,Toast.LENGTH_SHORT).show();
     }
 
     @Override
