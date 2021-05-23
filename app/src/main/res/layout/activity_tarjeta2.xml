@@ -11,8 +11,8 @@
         android:id="@+id/button"
         android:layout_width="150dp"
         android:layout_height="47dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/fondo_boton"
         android:text="CANCELAR"
         android:textColor="@color/white"
@@ -228,6 +228,45 @@
             app:layout_constraintTop_toBottomOf="@+id/textView20"
             app:layout_constraintVertical_bias="0.111" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="24dp"
+        android:text="Cuenta"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="29dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/shopingcart" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mousecursor" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
