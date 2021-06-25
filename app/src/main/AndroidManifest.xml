@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ep1">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/isil_logo"
@@ -9,13 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EP1">
-        <activity android:name=".ver_todo"
-            android:label="Productos">
-
-        </activity>
+        <activity android:name=".productos_marca"></activity>
+        <activity
+            android:name=".ver_todo"
+            android:label="Productos"></activity>
         <activity
             android:name=".mas_informacion"
-            android:label="Contacto"></activity>
+            android:label="Contacto" />
         <activity
             android:name=".Producto2Activity"
             android:label="Resultados encontrados" />
@@ -38,7 +40,8 @@
         <activity
             android:name=".cuenta_rl"
             android:label="Mi cuenta" />
-        <activity android:name=".Splash"
+        <activity
+            android:name=".Splash"
             android:theme="@style/Theme.EP1.NoActionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

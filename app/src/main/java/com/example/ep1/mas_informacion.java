@@ -15,7 +15,7 @@ public class mas_informacion extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mas_informacion);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         RadioButton mrbHistoria = findViewById(R.id.rbHistoria);
         RadioButton mrbMision = findViewById(R.id.rbMision);

@@ -33,11 +33,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SearchView buscarProductos = findViewById(R.id.searchProductos);
         LinearLayout beatsLayout = findViewById(R.id.layoutBeats);
         TextView verTodo = findViewById(R.id.txtSeeAll);
+        LinearLayout layoutBandO = findViewById(R.id.layoutBandO);
 
         imagenUsuario.setOnClickListener(this);
         buscarProductos.setOnClickListener(this);
         beatsLayout.setOnClickListener(this);
         verTodo.setOnClickListener(this);
+        layoutBandO.setOnClickListener(this);
     }
 
     @Override//3) Ocultar las barras de estado y de navegación
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch(v.getId()){
+            case R.id.layoutBandO:
+                startActivity(new Intent(this, productos_marca.class));
+                break;
             case R.id.txtSeeAll:
                 startActivity(new Intent(this, ver_todo.class));
                 break;
